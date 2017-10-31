@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+
+<head>
+  <link rel="stylesheet" href="../src/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+  <script src="../src/js/jquery.min.js"></script>
+  <script src="../src/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+  <script src="../src/js/functions.js"></script>
+  <meta charset="UTF-8">
+  <title>DatosCliente</title>
+</head>
+
+<body class="parallax">
+
+  <div class="card container">
+
+    <form id="form" data-toggle="validator" role="form">
+      <div class="subTitulo">
+        <label for="exampleTitleDatosUsuario">Datos Cliente</label>
+      </div>
+      <div class="infoDatosUsuario">
+        <label for="exampleSubTitleDatosUsuario">Ingrese los datos del usuario</label>
+      </div>
+      <div class="form-group">
+        <label for="inputName" class="control-label">Nombre*</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="inputName" class="control-label">Apellido*</label>
+        <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" required>
+      </div>
+
+      <div class="form-group">
+        <label for="inputName" class="control-label">Dni*</label>
+        <input type="text" class="form-control" id="inputDni" placeholder="Dni" required>
+      </div>
+
+      <div class="form-group">
+        <label for="inputName" class="control-label">Telefono*</label>
+        <input type="text" class="form-control" id="inputTelefono" placeholder="Telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="inputEmail" class="control-label">Email*</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+        <div class="help-block with-errors"></div>
+      </div>
+
+      <div class="form-group">
+        <button type="button" id="btn"  class="btn btn-primary" onclick="Validador()">Aceptar</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

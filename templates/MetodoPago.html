@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../src/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+  <script src="../src/js/jquery.min.js"></script>
+  <script src="../src/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+  <script src="../src/js/functions.js"></script>
+  <title>MetodoPago</title>
+</head>
+
+<body class="parallax">
+
+  <div class="card container">
+    <form action="#" class="credit-card-div">
+      <div class="subTitulo">
+        <label>Informacion de facturacion</label>
+      </div>
+
+      <div class="form-group">
+        <!-- Full Name -->
+        <label for="full_name_id" class="control-label">Nombre</label>
+        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Nombre">
+      </div>
+
+      <div class="form-group">
+        <!-- Street 1 -->
+        <label for="street1_id" class="control-label">Direccion</label>
+        <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Calle">
+      </div>
+
+
+
+      <div class="form-group">
+        <!-- City-->
+        <label for="city_id" class="control-label">Ciudad</label>
+        <input type="text" class="form-control" id="city_id" name="city" placeholder="Ciudad">
+      </div>
+
+      <div class="form-group">
+        <!-- State Button -->
+        <label for="state_id" class="control-label">Pais</label>
+        <select class="form-control" id="state_id">  </select>
+      </div>
+
+      <div class="form-group">
+        <!-- Zip Code-->
+        <label for="zip_id" class="control-label"> Codigo Postal</label>
+        <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+      </div>
+
+
+      <div class="subTitulo">
+        <label>Metodo de Pago</label>
+      </div>
+
+
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            <label for="state_id" class="control-label">metodo pago</label>
+            <select class="form-control" id="tarjetas">  </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label class="control-label">Trajeta</label>
+            <input type="text" class="form-control" placeholder="N° de tarjeta" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label class="control-label">Mes</label>
+            <select class="form-control" id="expMes"></select>
+          </div>
+          <div class="col">
+            <label class="control-label">Año</label>
+            <select class="form-control" id="expAño"></select>
+          </div>
+          <div class="col">
+            <label class="control-label">CCV</label>
+            <input type="text" class="form-control" placeholder="CCV" />
+          </div>
+          <div class="col">
+            <img src="/home/juan_cruz/Documentos/Programacion/DiesñoWeb/Proyecto/templates/templates-files/tarjeta1.png" class="img-rounded" />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Pagar!!</button>
+      </div>
+
+    </form>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+.titulo {
+  background-color: #008080;
+  margin: auto;
+  padding: 0.001%;
+  text-align: center;
+  font-size: 300%;
+  font-family: inherit;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+.subTitulo {
+  margin-top: 1%;
+  font-family: cursive;
+  font-size: 180%;
+
+  margin-left: 23%;
+}
+.infoDatosUsuario {
+  margin-left: 23%;
+}
+
+.form-group {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.form-check {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.parallax {
+  background-image: url("/home/juan_cruz/Documentos/Programacion/DiesñoWeb/Proyecto/templates/templates-files/Carousel/holidayin.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.container {
+  max-width: 70%;
+  margin-top: 1%;
+}
+
+.par {
+  text-align: center;
+  font-size: 130%;
+}
+
+.lol {
+  font-size: 250%;
+  color: rgb(0, 5, 120);
+  font-family: serif;
+}
+.main-text {
+    position: absolute;
+    top: 33%;
+    width: 96.6666666666666%;
+}
+.credit-card-div  span { padding-top:10px; }
+.credit-card-div img { padding-top:52px;
+ width: 120px;}
+.credit-card-div .small-font { font-size:9px; }
+.credit-card-div .pad-adjust { padding-top:10px; }
