@@ -1,0 +1,41 @@
+.subTitulo {
+  margin-top: 1%;
+  font-family: cursive;
+  font-size: 180%;
+  margin-left: 23%;
+}
+
+.container {
+  max-width: 70%;
+  margin-top: 1%;
+}
+
+.form-group {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.credit-card-div span {
+  padding-top: 10px;
+}
+
+.credit-card-div img {
+  padding-top: 52px;
+  width: 120px;
+}
+
+.credit-card-div .small-font {
+  font-size: 9px;
+}
+
+.credit-card-div .pad-adjust {
+  padding-top: 10px;
+}
+
+.parallax {
+  background-image: url("../../templates//img/holidayinPileta.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -2,11 +2,9 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="../src/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../src/css/estilo.css">
-  <script src="../src/js/jquery.min.js"></script>
-  <script src="../src/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
-  <script src="../src/js/functions.js"></script>
+  <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/css/DatosCliente.css">
+
   <meta charset="UTF-8">
   <title>DatosCliente</title>
 </head>
@@ -34,12 +32,12 @@
 
       <div class="form-group">
         <label for="inputName" class="control-label">Dni*</label>
-        <input type="text" class="form-control" id="inputDni" placeholder="Dni" required>
+        <input type="number" class="form-control" id="inputDni" placeholder="Dni" required>
       </div>
 
       <div class="form-group">
         <label for="inputName" class="control-label">Telefono*</label>
-        <input type="text" class="form-control" id="inputTelefono" placeholder="Telefono" required>
+        <input type="number" class="form-control" id="inputTelefono" placeholder="Telefono" required>
       </div>
 
       <div class="form-group">
@@ -49,10 +47,13 @@
       </div>
 
       <div class="form-group">
-        <button type="button" id="btn"  class="btn btn-primary" onclick="Validador()">Aceptar</button>
+        <button type="button" id="btn" class="btn btn-primary" onclick="Validador()">Aceptar</button>
       </div>
     </form>
   </div>
+  <script src="../src/js/jquery.min.js"></script>
+  <script src="../src/js/bootstrap.min.js"></script>
+  <script src="../src/js/functions.js"></script>
 </body>
 
 </html>

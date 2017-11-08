@@ -1,0 +1,36 @@
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.subTitulo {
+  margin-top: 1%;
+  font-family: cursive;
+  font-size: 180%;
+  margin-left: 23%;
+}
+
+.infoDatosUsuario {
+  margin-left: 23%;
+}
+
+.form-group {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+
+.parallax {
+  background-image: url("../../templates//img/holidayinPieza2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 70%;
+  margin-top: 1%;
+
+}
