@@ -52,10 +52,11 @@ function expmes() {
     }
   }
 };
+
 function expaño() {
   var HTMLskills = ' <option value = "AL">expiaño</option>';
   var bio = {
-    "skills": ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030" ]
+    "skills": ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"]
   };
 
   if (bio["skills"] != undefined) {
@@ -67,6 +68,7 @@ function expaño() {
     }
   }
 };
+
 function tarjetas() {
   var HTMLskills = ' <option value = "AL">tarjetas</option>';
   var bio = {
@@ -86,7 +88,6 @@ $(document).ready(pais);
 $(document).ready(expmes);
 $(document).ready(expaño);
 $(document).ready(tarjetas);
-
 $(function() {
 
   $('#hotelCarTabs a').click(function(e) {
@@ -295,9 +296,9 @@ function init() {
   var image = 'img/map-marker.svg';
   var myLatLng = new google.maps.LatLng(-31.363562, -64.219524);
   var marker = new google.maps.Marker({
-  position: myLatLng,
-  map: map
-});
+    position: myLatLng,
+    map: map
+  });
 
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
@@ -306,5 +307,36 @@ function init() {
   });
 }
 
-$(window).load(function() {
+$(window).load(function() {});
+
+
+// HTML document is loaded. DOM is ready.
+$(function() {
+
+  $('#hotelCarTabs a').click(function(e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+
+  $('.date').datetimepicker({
+    format: 'MM/DD/YYYY'
+  });
+  $('.date-time').datetimepicker();
+
+  // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
+
+// Load Flexslider when everything is loaded.
+$(window).load(function() {});

@@ -1280,3 +1280,14 @@ hr { border-top: 1px solid #111010; }
   padding-left: 0;
   list-style: none
 }
+.subTitulo {
+  margin-top: 1%;
+  font-family: cursive;
+  font-size: 180%;
+  margin-left: 10%;
+}
+.container {
+  max-width: 40%;
+  margin-top: 1%;
+
+}
