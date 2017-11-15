@@ -64,7 +64,7 @@ function guardarDb() {
     }).then(function() {
       if (devolver === true) {
         res_tipo.push(res);
-
+        window.location = ("MetodoPago.html");
       } else {
         alert("NO HAY DISPONIBILIDAD");
       }
