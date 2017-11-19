@@ -1661,3 +1661,14 @@ tr{
 .row {
   margin-top: 1%;
 }
+.td1{
+  font-size: 130%;
+
+}
+#td1{
+    display: none;
+}
+.btncustom{
+  font-size: 20px;
+  font-style: oblique;
+}

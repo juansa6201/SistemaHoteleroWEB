@@ -39,3 +39,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+input[type=number] {
+  -moz-appearance: textfield;
+}

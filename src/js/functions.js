@@ -69,7 +69,7 @@ function expaño() {
   }
 };
 
-function tarjetas() {
+function tarjetas1() {
   var HTMLskills = ' <option value = "AL">tarjetas</option>';
   var bio = {
     "skills": ["Mastercard", "Visa", "American Express", "Discover", "jcb"]
@@ -87,7 +87,7 @@ function tarjetas() {
 $(document).ready(pais);
 $(document).ready(expmes);
 $(document).ready(expaño);
-$(document).ready(tarjetas);
+$(document).ready(tarjetas1);
 $(function() {
 
   $('#hotelCarTabs a').click(function(e) {
@@ -340,3 +340,89 @@ $(function() {
 
 // Load Flexslider when everything is loaded.
 $(window).load(function() {});
+
+
+
+function pdf() {
+  var nombre = document.getElementById('full_name_id');
+  var direccion = document.getElementById('street1_id');
+  var cuidad = document.getElementById('city_id');
+  var pais = document.getElementById('state_id');
+  var cp = document.getElementById('zip_id');
+  var ntarjeta = document.getElementById('ntarjeta');
+  var ccv = document.getElementById('ccv');
+  if (nombre.checkValidity() == false || direccion.checkValidity() == false || cuidad.checkValidity() == false || pais.checkValidity() == false || cp.checkValidity() == false || ntarjeta.checkValidity() == false || ccv.checkValidity() == false) {
+    console.log("mal");
+  } else {
+    var nombre = document.getElementById('full_name_id').value;
+    var direccion = document.getElementById('street1_id').value;
+    var cuidad = document.getElementById('city_id').value;
+    var pais = document.getElementById('state_id').value;
+    var cp = document.getElementById('zip_id').value;
+    var ntarjeta = document.getElementById('ntarjeta').value;
+    var ccv = document.getElementById('ccv').value;
+
+    var pais;
+    var mpago;
+    var mes;
+    var año;
+
+    pais1 = document.getElementById('state_id')
+    pais = pais1.options[state_id.selectedIndex].text;
+    $("#state_id").change(function() {
+      pais = $(this).find("option:selected").text();
+    });
+
+    mpago1 = document.getElementById('tarjetas')
+    mpago = mpago1.options[tarjetas.selectedIndex].text;
+    $("#tarjetas").change(function() {
+      mpago = $(this).find("option:selected").text();
+    });
+
+    mes1 = document.getElementById('expMes')
+    mes = mes1.options[expMes.selectedIndex].text;
+    $("#expMes").change(function() {
+      mes = $(this).find("option:selected").text();
+    });
+
+    año1 = document.getElementById('expAño')
+    año = expAño.options[expAño.selectedIndex].text;
+    $("#expAño").change(function() {
+      año = $(this).find("option:selected").text();
+    });
+
+
+
+    var doc = new jsPDF()
+    doc.setFontSize(15);
+    doc.text('Informacion', 90, 10)
+    doc.text("Nombre:", 69, 20)
+    doc.text(nombre, 90, 20)
+    doc.text("Direccion:", 65, 30)
+    doc.text(direccion, 90, 30)
+    doc.text("Ciudad:", 70, 40)
+    doc.text(cuidad, 90, 40)
+
+    doc.text("Pais:", 77, 50)
+    doc.text(pais, 90, 50)
+
+    doc.text("Codigo Postal:", 54, 60)
+    doc.text(cp, 90, 60)
+
+    doc.text("Metodo Pago:", 55, 70)
+    doc.text(mpago, 90, 70)
+
+    doc.text("Tarjeta:", 70, 80)
+    doc.text(ntarjeta, 90, 80)
+
+    doc.text("Mes de expiracion:", 45, 90)
+    doc.text(mes, 90, 90)
+    doc.text("Año de expiracion:", 45, 100)
+    doc.text(año, 90, 100)
+
+    doc.text("CCV:", 75, 110)
+    doc.text(ccv, 90, 110)
+    doc.save('a4.pdf')
+  }
+}
+$(document).ready(pdf);

@@ -7,14 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../src/css/bootstrap.min.css">
   <link rel="stylesheet" href="../src/css/MetodoPago.css">
-<link rel="stylesheet" href="../src/css/MetodoPago.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
   <title>MetodoPago</title>
 </head>
 
 <body class="parallax">
 
   <div class="card container">
-    <form action="#" class="credit-card-div">
+    <form action="#" class="credit-card-div" data-toggle="validator">
       <div class="subTitulo">
         <label>Informacion de facturacion</label>
       </div>
@@ -22,13 +22,13 @@
       <div class="form-group">
         <!-- Full Name -->
         <label for="full_name_id" class="control-label">Nombre</label>
-        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Nombre">
+        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Nombre" required>
       </div>
 
       <div class="form-group">
         <!-- Street 1 -->
         <label for="street1_id" class="control-label">Direccion</label>
-        <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Calle">
+        <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Calle" required>
       </div>
 
 
@@ -36,19 +36,19 @@
       <div class="form-group">
         <!-- City-->
         <label for="city_id" class="control-label">Ciudad</label>
-        <input type="text" class="form-control" id="city_id" name="city" placeholder="Ciudad">
+        <input type="text" class="form-control" id="city_id" name="city" placeholder="Ciudad" required>
       </div>
 
       <div class="form-group">
         <!-- State Button -->
         <label for="state_id" class="control-label">Pais</label>
-        <select class="form-control" id="state_id">  </select>
+        <select class="form-control" id="state_id" required>  </select>
       </div>
 
       <div class="form-group">
         <!-- Zip Code-->
         <label for="zip_id" class="control-label"> Codigo Postal</label>
-        <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+        <input type="numer" class="form-control" id="zip_id" name="zip" placeholder="#####" required>
       </div>
 
 
@@ -61,27 +61,27 @@
         <div class="form-row">
           <div class="col">
             <label for="state_id" class="control-label">Metodo pago</label>
-            <select class="form-control" id="tarjetas">  </select>
+            <select class="form-control" id="tarjetas" required>  </select>
           </div>
         </div>
         <div class="form-row">
           <div class="col">
             <label class="control-label">Trajeta</label>
-            <input type="text" class="form-control" placeholder="N° de tarjeta" />
+            <input type="number" class="form-control" id="ntarjeta" placeholder="N° de tarjeta" required>
           </div>
         </div>
         <div class="form-row">
           <div class="col">
             <label class="control-label">Mes</label>
-            <select class="form-control" id="expMes"></select>
+            <select class="form-control" id="expMes" required></select>
           </div>
           <div class="col">
             <label class="control-label">Año</label>
-            <select class="form-control" id="expAño"></select>
+            <select class="form-control" id="expAño" required></select>
           </div>
           <div class="col">
             <label class="control-label">CCV</label>
-            <input type="text" class="form-control" placeholder="CCV" />
+            <input type="number" class="form-control" id="ccv" placeholder="CCV" required>
           </div>
           <div class="col">
             <img src="img/tarjeta1.png" class="img-rounded" />
@@ -90,7 +90,8 @@
       </div>
       <div class="form-group">
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary">Pagar!!</button>
+        <input type="button" value="Pagar!!" class="btn btn-primary" onclick="pdf()"></input>
+
       </div>
 
     </form>
@@ -99,6 +100,7 @@
   <script src="../src/js/jquery.min.js"></script>
   <script src="../src/js/bootstrap.min.js"></script>
   <script src="../src/js/functions.js"></script>
+
 </body>
 
 </html>
