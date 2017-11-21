@@ -16,8 +16,7 @@ la idea de llevar este programa anteriormente realizado en Java a una version we
 ## VENTANA Y FUNCIONALIDADES
 Este programa cuenta con 4 ventanas(Index, Datos Cliente, Check-in, metodo Pago). El index contiene toda la informacion del hotel y posee un voton el cual te lleva a la pantalla para introducir los datos del cliente. Esta ventana contendra un formulario con los campos nececarios para introducir los datos de la persona ingresante al hotel, luego de esto nos rediccionara a la ventana checkin en la cual se podra elejir el tipo de habitacion, los dias de estadia y la cantidad de huespedes que se alojaran, luego nos llevara a la ventana metodo pago, esta ventana contendra un formulario para completar todos los datos del pago del cliente, cuando aceptemos el pago nos creara un pdf con toda la informacion.
 
-
-![](https://firebasestorage.googleapis.com/v0/b/sistema-hotelero-ea09e.appspot.com/o/index.gif?alt=media&token=04ce732c-6ab9-48f0-a3ee-621222dcf96d)
+Gif: https://goo.gl/HKXQrP
 
 ![](https://firebasestorage.googleapis.com/v0/b/sistema-hotelero-ea09e.appspot.com/o/DatosClientes.png?alt=media&token=faf7528d-b954-4d23-8783-603ed6b4209d)
 
